@@ -2,7 +2,7 @@ var clone=(obj)=>{
     var buf;
     if (obj instanceof Array){
         buf=[];
-        for(i=0;i<obj.length;i++){
+        for(var i=0;i<obj.length;i++){
             buf[i]=clone(obj[i]);
         }
         return buf;
@@ -18,3 +18,5 @@ var clone=(obj)=>{
         return obj;
     }
 }
+var arr=["afjjg","ihhu","jfoig"]
+clone(arr);
