@@ -17,7 +17,7 @@ var clone=(obj)=>{
     else{
         return obj;
     }
+    console.log(buf);
 }
 var arr=["afjjg","ihhu","jfoig"]
 clone(arr);
-console.log(buf);
