@@ -5,19 +5,19 @@ var clone=(obj)=>{
         for(var i=0;i<obj.length;i++){
             buf[i]=clone(obj[i]);
         }
-        return buf;
+        console.log(buf);
         }
         else if(obj instanceof Object){
              buf={};
-        for(k in obj){
+        for(var k in obj){
             buf[k]=clone(obj[k]);
         }
-        return buf;
+        console.log(buf);
     }
     else{
-        return obj;
+        buf=obj;
+        console.log(buf);
     }
-    console.log(buf);
 }
-var arr=["afjjg","ihhu","jfoig"]
+var arr=["afjjg","ihhu","jfoig"];
 clone(arr);
